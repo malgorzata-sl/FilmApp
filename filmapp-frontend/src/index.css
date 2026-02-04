@@ -1,0 +1,166 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+    .page {
+        @apply max-w-7xl mx-auto px-4 py-6 text-white pb-32;
+    }
+
+    .grid-details {
+        @apply flex flex-col gap-6 lg:flex-row lg:items-start;
+    }
+
+
+    .card {
+        @apply bg-surface-dark border border-white/10 rounded-xl overflow-hidden;
+    }
+
+    .card-soft {
+        @apply bg-surface-dark/40 border border-white/10 rounded-xl;
+    }
+
+    .poster {
+        @apply relative aspect-[2/3] border border-white/10 bg-surface-dark rounded-xl overflow-hidden;
+    }
+
+    .section-title {
+        @apply text-lg font-bold uppercase tracking-wider text-[#9b92c9] border-b border-white/10 pb-2;
+    }
+
+    .muted {
+        @apply text-white/60;
+    }
+
+    .btn {
+        @apply h-12 rounded-xl border border-white/10 font-bold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform;
+    }
+
+    .btn-primary {
+        @apply btn bg-primary text-white;
+    }
+
+    .btn-surface {
+        @apply btn bg-surface-dark text-white;
+    }
+
+    .btn-like {
+        @apply btn bg-surface-dark text-red-500;
+    }
+
+    .textarea {
+        @apply w-full bg-background-dark/50 border border-white/10 rounded-lg text-sm text-white placeholder:text-[#9b92c9] p-3 min-h-[80px];
+    }
+
+    .page-x {
+        @apply px-4;
+    }
+
+    .search-bar {
+        @apply flex w-full items-stretch rounded-xl h-12 bg-surface-dark border border-white/10 focus-within:border-primary/50 transition-all overflow-hidden;
+    }
+
+    .chip-btn {
+        @apply flex h-9 items-center justify-center gap-x-2 rounded-xl bg-surface-dark border border-white/10 px-4 active:scale-95 transition-transform;
+    }
+
+    .chip-btn-sm {
+        @apply flex h-9 items-center justify-center rounded-xl bg-surface-dark border border-white/10 px-3 active:scale-95 transition-transform;
+    }
+
+    .movie-card {
+        @apply col-span-2 md:col-span-1 bg-surface-dark border border-white/10 rounded-xl overflow-hidden cursor-pointer;
+    }
+
+    .search-input {
+        @apply w-full bg-transparent border-none text-white focus:ring-0 placeholder:text-[#9b92c9] px-3 text-sm font-normal;
+    }
+
+    .tabs {
+        @apply flex h-11 w-full rounded-xl bg-surface-dark p-1 border border-white/10;
+    }
+
+    .tab {
+        @apply flex h-full w-1/2 cursor-pointer items-center justify-center rounded-lg px-2 text-sm font-semibold transition-all text-[#9b92c9];
+    }
+
+    .tab-active {
+        @apply bg-primary text-white;
+    }
+
+    .movie-poster {
+        @apply aspect-[2/3] bg-black/30 relative;
+    }
+
+    .page-btn {
+        @apply w-8 h-8 flex items-center justify-center rounded-lg border border-white/10 bg-surface-dark text-[#9b92c9];
+    }
+
+    .page-btn-active {
+        @apply border-primary bg-primary text-white font-bold;
+    }
+}
+
+@layer base {
+    body {
+        font-family: 'Spline Sans', sans-serif;
+        -webkit-tap-highlight-color: transparent;
+        min-height: 100dvh;
+    }
+
+    .material-symbols-outlined {
+        font-family: 'Material Symbols Outlined', sans-serif !important;
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24 !important;
+    }
+}
+
+@layer utilities {
+    .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
+
+html {
+    min-height: max(884px, 100dvh);
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined', sans-serif !important;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.custom-checkbox {
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.25rem;
+    cursor: pointer;
+    position: relative;
+}
+
+    .custom-checkbox:checked {
+        background-color: #3713ec;
+        border-color: #3713ec;
+    }
+
+        .custom-checkbox:checked::after {
+            content: '✓';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 0.75rem;
+        }

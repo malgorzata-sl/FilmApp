@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="FilmApp.Tests/FilmApp.Tests.csproj" Id="a8a3cef7-2213-4cdc-bd90-a5d48e15e6f4" />
+  <Project Path="FilmApp/FilmApp.csproj" />
+</Solution>

@@ -1,0 +1,20 @@
+# Visual Studio / .NET
+.vs/
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+
+# Testy
+FilmApp.Tests/bin/
+FilmApp.Tests/obj/
+
+# Node / frontend
+node_modules/
+dist/
+build/
+
+# Inne
+*.log

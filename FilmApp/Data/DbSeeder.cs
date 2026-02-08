@@ -29,9 +29,9 @@ public static class DbSeeder
         {
             var inception = new Movie
             {
-                Title = "Incepcja",
+                Title = "Incep",
                 Year = 2010,
-                CoverUrl = "/covers/incepcja.jpg",
+                CoverUrl = "/covers/incep.jpg",
                 Description = "Thriller sci-fi.",
                 Type = ContentType.Movie,
                 DurationMinutes = 148
@@ -39,9 +39,9 @@ public static class DbSeeder
 
             var matrix = new Movie
             {
-                Title = "Matrix",
+                Title = "Mat",
                 Year = 1999,
-                CoverUrl = "/covers/matrix.jpg",
+                CoverUrl = "/covers/mat.jpg",
                 Description = "Klasyczne sci-fi.",
                 Type = ContentType.Movie,
                 DurationMinutes = 136
@@ -49,9 +49,9 @@ public static class DbSeeder
 
             var godfather = new Movie
             {
-                Title = "Ojciec chrzestny",
+                Title = "Ojc",
                 Year = 1972,
-                CoverUrl = "/covers/godfather.jpg",
+                CoverUrl = "/covers/god.jpg",
                 Description = "Gangsterski klasyk.",
                 Type = ContentType.Movie,
                 DurationMinutes = 175
@@ -59,9 +59,9 @@ public static class DbSeeder
 
             var breakingBad = new Movie
             {
-                Title = "Breaking Bad",
+                Title = "Brea",
                 Year = 2008,
-                CoverUrl = "/covers/breakingbad.jpg",
+                CoverUrl = "/covers/brea.jpg",
                 Description = "Serial kryminalny.",
                 Type = ContentType.Series,
                 SeasonsCount = 5,

@@ -3,12 +3,7 @@ using FilmApp.Api.Dtos;
 using FilmApp.Api.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
 using Microsoft.AspNetCore.Authorization;
-
-
-
-
 namespace FilmApp.Api.Controllers;
 
 
